@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 function CalculaterBtn({ children, className }) {
   return (
     <button
-      className={twMerge(`bg-gray-300 py-5 aspect-square rounded-2xl shadow-sm text-black-100
+      className={twMerge(`bg-gray-300 py-5 aspect-square rounded-2xl shadow-sm text-black
       hover:brightness-95 hover:cursor-pointer active:brightness-75 transition-all duration-100 text-3xl` , 
       className)}
     >
@@ -32,7 +32,7 @@ function Calculater() {
     <CalculaterBtn>2</CalculaterBtn>
     <CalculaterBtn>3</CalculaterBtn>
     <CalculaterBtn className="bg-orange-400 text-black">+</CalculaterBtn>
-    <CalculaterBtn className="col-span-2">0</CalculaterBtn>
+    <CalculaterBtn className="col-span-2 aspect-auto">0</CalculaterBtn>
     <CalculaterBtn>.</CalculaterBtn>
     <CalculaterBtn className="bg-slate-600 text-white">=</CalculaterBtn>
   </div>
