@@ -1,4 +1,5 @@
 import { twMerge } from "tailwind-merge";
+import { useState } from "react";
 
 function CalculaterBtn({ children, className }) {
   return (
@@ -14,13 +15,24 @@ function CalculaterBtn({ children, className }) {
 
 function Calculater() { 
 
+  const [curValue, setValue] = useState("0");
+
+
+
+  return ( 
+  <div className="bg-pink-100 p-3 rounded-2xl"> 
+
+  <div className=" bg-gray-300 shadow-sm text-right text-6xl mb-5 rounded-2xl p-4">{curValue}</div>
+
 
   
-  return <div className="bg-pink-100 p-3 rounded-2xl"> 
-
-  <div className=" bg-gray-300 shadow-sm text-right text-6xl mb-5 rounded-2xl p-4">0</div>
-
   <div className="grid grid-cols-4 gap-5">
+
+    <button onClick={() => setValue(Number(curValue + '10'))}>
+      click me
+    </button>
+
+
     <CalculaterBtn className="bg-yellow-200 text-black">C</CalculaterBtn>
     <CalculaterBtn >%</CalculaterBtn>
     <CalculaterBtn >√</CalculaterBtn>
@@ -44,11 +56,11 @@ function Calculater() {
 
   
   </div>
-}
+)}
 
 function App() {
   return (
-    <div className="bg-gray-800 h-screen flex items-center justify-center">
+    <div className="bg-gray-800 h-[150vh] flex items-center justify-center">
       <Calculater />
     </div>
   )
