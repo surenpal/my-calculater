@@ -1,31 +1,31 @@
-function CalculaterBtn({btn}) {
+function CalculaterBtn({children}) {
   return <button className="bg-gray-300 py-3 aspect-square rounded-2xl shadow-sm text-black-100
-    hover:brightness-95 hover:cursor-pointer active:brightness-75 transition-all duration-100">C</button>
+    hover:brightness-95 hover:cursor-pointer active:brightness-75 transition-all duration-100">{children}</button>
 }
 
 function Calculater() { 
   return <div className="bg-pink-100 p-5 rounded-2xl"> 
 
   <div className="grid grid-cols-4 gap-5">
-    <CalculaterBtn btn={"btn"}>C</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>%</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>√</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>÷</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>7</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>8</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>9</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>*</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>4</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>5</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>6</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>-</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>1</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>2</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>3</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>+</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>0</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>.</CalculaterBtn>
-    <CalculaterBtn btn={"btn"}>=</CalculaterBtn>
+    <CalculaterBtn>C</CalculaterBtn>
+    <CalculaterBtn>%</CalculaterBtn>
+    <CalculaterBtn>√</CalculaterBtn>
+    <CalculaterBtn>÷</CalculaterBtn>
+    <CalculaterBtn>7</CalculaterBtn>
+    <CalculaterBtn>8</CalculaterBtn>
+    <CalculaterBtn>9</CalculaterBtn>
+    <CalculaterBtn>*</CalculaterBtn>
+    <CalculaterBtn>4</CalculaterBtn>
+    <CalculaterBtn>5</CalculaterBtn>
+    <CalculaterBtn>6</CalculaterBtn>
+    <CalculaterBtn>-</CalculaterBtn>
+    <CalculaterBtn>1</CalculaterBtn>
+    <CalculaterBtn>2</CalculaterBtn>
+    <CalculaterBtn>3</CalculaterBtn>
+    <CalculaterBtn>+</CalculaterBtn>
+    <CalculaterBtn>0</CalculaterBtn>
+    <CalculaterBtn>.</CalculaterBtn>
+    <CalculaterBtn>=</CalculaterBtn>
   </div>
 
   
