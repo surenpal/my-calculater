@@ -1,6 +1,6 @@
 function CalculaterBtn({children}) {
-  return <button className="bg-gray-300 py-3 aspect-square rounded-2xl shadow-sm text-black-100
-    hover:brightness-95 hover:cursor-pointer active:brightness-75 transition-all duration-100">{children}</button>
+  return <button className="bg-gray-300 py-5 aspect-square rounded-2xl shadow-sm text-black-100
+    hover:brightness-95 hover:cursor-pointer active:brightness-75 transition-all duration-100 text-3xl">{children}</button>
 }
 
 function Calculater() { 
