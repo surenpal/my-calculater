@@ -1,8 +1,9 @@
 function Calculater() { 
   return <div className="bg-pink-100 p-5 rounded-2xl"> 
   
-  <div>
-    <button>C</button>
+  <div className="grid grid-cols-4 gap-5">
+    <button className="bg-gray-300 py-3 aspect-square rounded-2xl shadow-sm text-black-100
+    hover:brightness-95 hover:cursor-pointer active:brightness-75 transition-all duration-100">C</button>
     <button>%</button>
     <button>√</button>
     <button>÷</button>
