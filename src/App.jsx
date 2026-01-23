@@ -13,7 +13,9 @@ function CalculaterBtn({ children, className }) {
 }
 
 function Calculater() { 
-  return <div className="bg-pink-100 p-5 rounded-2xl"> 
+  return <div className="bg-pink-100 p-3 rounded-2xl"> 
+
+  <div className=" bg-gray-300 shadow-sm text-right text-6xl mb-5 rounded-2xl p-4">0</div>
 
   <div className="grid grid-cols-4 gap-5">
     <CalculaterBtn className="bg-yellow-200 text-black">C</CalculaterBtn>
