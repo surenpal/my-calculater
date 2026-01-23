@@ -28,11 +28,6 @@ function Calculater() {
   
   <div className="grid grid-cols-4 gap-5">
 
-    <button onClick={() => setValue(Number(curValue + '10'))}>
-      click me
-    </button>
-
-
     <CalculaterBtn className="bg-yellow-200 text-black">C</CalculaterBtn>
     <CalculaterBtn >%</CalculaterBtn>
     <CalculaterBtn >√</CalculaterBtn>
