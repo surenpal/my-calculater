@@ -1,5 +1,27 @@
 function Calculater() { 
-  return <div className="bg-yellow-400"></div>
+  return <div className="bg-pink-100"> 
+  
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  
+  </div>
 }
 
 function App() {
