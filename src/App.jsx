@@ -1,12 +1,13 @@
 import { twMerge } from "tailwind-merge";
 import { useState } from "react";
 
-function CalculaterBtn({ children, className }) {
+function CalculaterBtn({ children, className , ...rest}) {
   return (
     <button
       className={twMerge(`bg-gray-300 py-5 aspect-square rounded-2xl shadow-sm text-black
       hover:brightness-95 hover:cursor-pointer active:brightness-75 transition-all duration-100 text-3xl` , 
       className)}
+      {...rest}
     >
       {children}
     </button>
@@ -15,7 +16,7 @@ function CalculaterBtn({ children, className }) {
 
 function Calculater() { 
 
-  const [curValue, setValue] = useState("0");
+  const [curValue, setValue] = useState(" ");
 
   function handleDecimalClick(i){
 
@@ -50,8 +51,8 @@ setValue((prev) => prev + i);
     <CalculaterBtn onClick={() => handleDecimalClick("2")}>2</CalculaterBtn>
     <CalculaterBtn onClick={() => handleDecimalClick("3")}>3</CalculaterBtn>
     <CalculaterBtn className="bg-orange-400 text-black">+</CalculaterBtn>
-    <CalculaterBtn className="col-span-2 aspect-auto">0</CalculaterBtn>
-    <CalculaterBtn>.</CalculaterBtn>
+    <CalculaterBtn className="col-span-2 aspect-auto" onClick={() => handleDecimalClick("0")}>0</CalculaterBtn>
+    <CalculaterBtn onClick={() => handleDecimalClick(".")}>.</CalculaterBtn>
     <CalculaterBtn className="bg-slate-600 text-white">=</CalculaterBtn>
   </div>
 
