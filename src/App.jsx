@@ -46,6 +46,36 @@ function setOp(op){
   setValue('');
 }
 
+function handleEqual () {
+  let result;
+  const prev = parseFloat (prevValue);
+  const current = parseFloat (curValue);
+
+  if (isNaN (prev) || isNaN (current)) return;
+
+  switch (operation) {
+    case '+':
+      result = prev + current;
+      break;
+    case '-':
+      result = prev - current;
+      break;
+    case '*':
+      result = prev * current;
+      break;
+    case '÷':
+      result = prev / current;
+      break;
+    default:
+      return;
+  }
+
+  setValue(result.toString());
+  setPrevValue('');
+  setOperation(null);
+}
+
+
   return ( 
   <div className="bg-pink-100 p-3 rounded-2xl"> 
 
