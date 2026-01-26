@@ -17,6 +17,12 @@ function Calculater() {
 
   const [curValue, setValue] = useState("0");
 
+  function handleDecimalClick(i){
+
+setValue(prev => prev + i);
+
+  }
+
 
 
   return ( 
