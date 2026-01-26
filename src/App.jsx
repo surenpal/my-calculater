@@ -27,7 +27,9 @@ setValue((prev) => prev + i);
   }
  
 function handleClear () {
-  setValue(" ");
+  setValue('');
+  setPrevValue('');
+  setOp('');
 }
 
 function setPercent () {
@@ -38,7 +40,11 @@ function setSqrt () {
   setValue((prev) => Math.sqrt(prev))
 }
 
-
+function setOp(op){
+  setOperation(op);
+  setPrevValue(curValue);
+  setValue('');
+}
 
   return ( 
   <div className="bg-pink-100 p-3 rounded-2xl"> 
@@ -56,15 +62,15 @@ function setSqrt () {
     <CalculaterBtn onClick={() => handleDecimalClick("7")}>7</CalculaterBtn>
     <CalculaterBtn onClick={() => handleDecimalClick("8")}>8</CalculaterBtn>
     <CalculaterBtn onClick={() => handleDecimalClick("9")}>9</CalculaterBtn>
-    <CalculaterBtn className="bg-orange-400 text-black">*</CalculaterBtn>
+    <CalculaterBtn className="bg-orange-400 text-black" onClick={() => setOp("*")}>*</CalculaterBtn>
     <CalculaterBtn onClick={() => handleDecimalClick("4")}>4</CalculaterBtn>
     <CalculaterBtn onClick={() => handleDecimalClick("5")}>5</CalculaterBtn>
     <CalculaterBtn onClick={() => handleDecimalClick("6")}>6</CalculaterBtn>
-    <CalculaterBtn className="bg-orange-400 text-black">-</CalculaterBtn>
+    <CalculaterBtn className="bg-orange-400 text-black" onClick={() => setOp("-")}>-</CalculaterBtn>
     <CalculaterBtn onClick={() => handleDecimalClick("1")}>1</CalculaterBtn>
     <CalculaterBtn onClick={() => handleDecimalClick("2")}>2</CalculaterBtn>
     <CalculaterBtn onClick={() => handleDecimalClick("3")}>3</CalculaterBtn>
-    <CalculaterBtn className="bg-orange-400 text-black">+</CalculaterBtn>
+    <CalculaterBtn className="bg-orange-400 text-black" onClick={() => setOp("+")} >+</CalculaterBtn>
     <CalculaterBtn className="col-span-2 aspect-auto" onClick={() => handleDecimalClick("0")}>0</CalculaterBtn>
     <CalculaterBtn onClick={() => handleDecimalClick(".")}>.</CalculaterBtn>
     <CalculaterBtn className="bg-slate-600 text-white">=</CalculaterBtn>
