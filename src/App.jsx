@@ -32,6 +32,10 @@ function setPercent () {
   setValue((prev) => prev /100)
 }
 
+function setSqrt () {
+  setValue((prev) => Math.sqrt(prev))
+}
+
 
   return ( 
   <div className="bg-pink-100 p-3 rounded-2xl"> 
@@ -43,8 +47,8 @@ function setPercent () {
   <div className="grid grid-cols-4 gap-5">
 
     <CalculaterBtn className="bg-yellow-200 text-black" onClick={handleClear}>C</CalculaterBtn>
-    <CalculaterBtn >%</CalculaterBtn>
-    <CalculaterBtn >√</CalculaterBtn>
+    <CalculaterBtn onClick={setPercent}>%</CalculaterBtn>
+    <CalculaterBtn onClick={setSqrt}>√</CalculaterBtn>
     <CalculaterBtn className="bg-orange-400 text-black">÷</CalculaterBtn>
     <CalculaterBtn onClick={() => handleDecimalClick("7")}>7</CalculaterBtn>
     <CalculaterBtn onClick={() => handleDecimalClick("8")}>8</CalculaterBtn>
