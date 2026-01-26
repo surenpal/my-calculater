@@ -19,7 +19,7 @@ function Calculater() {
 
   function handleDecimalClick(i){
 
-setValue(prev => prev + i);
+setValue((prev) => prev + i);
 
   }
 
