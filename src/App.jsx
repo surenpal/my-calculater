@@ -103,7 +103,7 @@ function handleEqual () {
     <CalculaterBtn className="bg-orange-400 text-black" onClick={() => setOp("+")} >+</CalculaterBtn>
     <CalculaterBtn className="col-span-2 aspect-auto" onClick={() => handleDecimalClick("0")}>0</CalculaterBtn>
     <CalculaterBtn onClick={() => handleDecimalClick(".")}>.</CalculaterBtn>
-    <CalculaterBtn className="bg-slate-600 text-white">=</CalculaterBtn>
+    <CalculaterBtn className="bg-slate-600 text-white" onClick={handleEqual}>=</CalculaterBtn>
   </div>
 
   
