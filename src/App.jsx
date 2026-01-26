@@ -23,6 +23,10 @@ function Calculater() {
 setValue((prev) => prev + i);
 
   }
+ 
+function handleClick () {
+  setValue(" ");
+}
 
 
 
