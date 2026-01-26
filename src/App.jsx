@@ -17,6 +17,8 @@ function CalculaterBtn({ children, className , ...rest}) {
 function Calculater() { 
 
   const [curValue, setValue] = useState(" ");
+  const [prevValue, setPrevValue] = useState(" ");
+  const [operation, setOperation] = useState(null);
 
   function handleDecimalClick(i){
 
@@ -35,6 +37,7 @@ function setPercent () {
 function setSqrt () {
   setValue((prev) => Math.sqrt(prev))
 }
+
 
 
   return ( 
