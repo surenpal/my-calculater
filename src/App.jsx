@@ -38,17 +38,17 @@ setValue((prev) => prev + i);
     <CalculaterBtn >%</CalculaterBtn>
     <CalculaterBtn >√</CalculaterBtn>
     <CalculaterBtn className="bg-orange-400 text-black">÷</CalculaterBtn>
-    <CalculaterBtn>7</CalculaterBtn>
-    <CalculaterBtn>8</CalculaterBtn>
-    <CalculaterBtn>9</CalculaterBtn>
+    <CalculaterBtn onClick={() => handleDecimalClick("7")}>7</CalculaterBtn>
+    <CalculaterBtn onClick={() => handleDecimalClick("8")}>8</CalculaterBtn>
+    <CalculaterBtn onClick={() => handleDecimalClick("9")}>9</CalculaterBtn>
     <CalculaterBtn className="bg-orange-400 text-black">*</CalculaterBtn>
-    <CalculaterBtn>4</CalculaterBtn>
-    <CalculaterBtn>5</CalculaterBtn>
-    <CalculaterBtn>6</CalculaterBtn>
+    <CalculaterBtn onClick={() => handleDecimalClick("4")}>4</CalculaterBtn>
+    <CalculaterBtn onClick={() => handleDecimalClick("5")}>5</CalculaterBtn>
+    <CalculaterBtn onClick={() => handleDecimalClick("6")}>6</CalculaterBtn>
     <CalculaterBtn className="bg-orange-400 text-black">-</CalculaterBtn>
-    <CalculaterBtn>1</CalculaterBtn>
-    <CalculaterBtn>2</CalculaterBtn>
-    <CalculaterBtn>3</CalculaterBtn>
+    <CalculaterBtn onClick={() => handleDecimalClick("1")}>1</CalculaterBtn>
+    <CalculaterBtn onClick={() => handleDecimalClick("2")}>2</CalculaterBtn>
+    <CalculaterBtn onClick={() => handleDecimalClick("3")}>3</CalculaterBtn>
     <CalculaterBtn className="bg-orange-400 text-black">+</CalculaterBtn>
     <CalculaterBtn className="col-span-2 aspect-auto">0</CalculaterBtn>
     <CalculaterBtn>.</CalculaterBtn>
