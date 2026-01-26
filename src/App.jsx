@@ -24,7 +24,7 @@ setValue((prev) => prev + i);
 
   }
  
-function handleClick () {
+function handleClear () {
   setValue(" ");
 }
 
