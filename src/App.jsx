@@ -28,6 +28,9 @@ function handleClear () {
   setValue(" ");
 }
 
+function setPercent () {
+  setValue((prev) => prev /100)
+}
 
 
   return ( 
@@ -39,7 +42,7 @@ function handleClear () {
   
   <div className="grid grid-cols-4 gap-5">
 
-    <CalculaterBtn className="bg-yellow-200 text-black">C</CalculaterBtn>
+    <CalculaterBtn className="bg-yellow-200 text-black" onClick={handleClear}>C</CalculaterBtn>
     <CalculaterBtn >%</CalculaterBtn>
     <CalculaterBtn >√</CalculaterBtn>
     <CalculaterBtn className="bg-orange-400 text-black">÷</CalculaterBtn>
