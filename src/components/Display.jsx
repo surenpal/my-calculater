@@ -18,7 +18,7 @@ export default function Display({
         {prevValue} {operation}
       </div>
 
-      <div className="text-5xl font-bold">
+      <div className="text-5xl font-bold overflow-hidden whitespace-nowrap">
         {curValue || "0"}
       </div>
     </div>

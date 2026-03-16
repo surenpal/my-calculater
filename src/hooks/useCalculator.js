@@ -65,7 +65,7 @@ export default function useCalculator() {
                 return;
         }
 
-        setValue(result.toString());
+        setValue(result.toString().slice(0, MAX_LENGTH));
         setPrevValue("");
         setOperation(null);
     }
